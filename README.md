@@ -15,7 +15,10 @@ Users should be able to:
 
 ### Screenshot
 
+-desktop design
 ![](./src/assets/desktop.png)
+
+-mobile design
 ![](./src/assets/mobil.png)
 
 ### Links
