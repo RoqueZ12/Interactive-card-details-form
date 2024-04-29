@@ -1,0 +1,32 @@
+.card-app{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: 100vh;
+ 
+}
+.card-img{
+  background-image: url('./assets/bg-main-desktop.png');
+  background-repeat: no-repeat; 
+  background-size:cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.card-data{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width:750px) {
+  .card-app{
+    display: flex;
+    flex-direction: column;
+  }
+  .card-img{
+    height: 35%;
+  }
+  .card-data{
+    height: 65%;
+  }
+}

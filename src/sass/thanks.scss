@@ -1,0 +1,28 @@
+@use 'color';
+.thanks-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+/* Estilo para los elementos dentro de thanks-container */
+.thanks-container > * {
+  margin: 20px 0; /* Separación de 20px en la parte superior e inferior */
+}
+.container-img img {
+  width: 70px; /* Ancho de la imagen ajustado a 100px, ajusta según sea necesario */
+}
+
+.container-text {
+  text-align: center;
+  & h2{
+    margin: 10px auto;
+  }
+  & span{
+    color:color.$Dark-grayish-violet;
+  }
+}
+
+

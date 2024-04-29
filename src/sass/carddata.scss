@@ -1,0 +1,89 @@
+@use 'color';
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 520px;
+  &-date{
+    display: flex;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}
+.date-der{
+  width: 100%;
+}
+.date-der input{
+  width: 100%;
+}
+.date-izq input{
+  width: 30%;
+  margin-right: 10px;
+}
+form {
+  padding: 20px;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+}
+
+input, button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+button {
+  background-color: color.$Very-dark-violet;
+  color: color.$White;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+.text-invalid {
+  color: red;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.error-texto{
+  border: 1px solid color.$Red;
+}
+
+@media screen and (max-width: 750px) {
+  .form-container {
+    justify-content: center; /* Centramos */
+    width: 100%;
+    height: 100%;
+  }
+  form{
+    height: 75%;
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .form-container {
+    justify-content: center; /* Centramos  */
+  }
+  form{
+    height: 75%;
+    width: 75%;
+  }
+}
